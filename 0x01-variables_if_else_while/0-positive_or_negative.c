@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <time.h>
+#include <stdlib.h>
 /**
-* main - collect random number from user
+* main - prints random number and tell if zero,positive or negative
 * Return: 0
 */
 int main(void)
@@ -12,15 +13,15 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	if (n > 0)
 	{
-		printf("%ls is positive\n", (signed long)n);
+		printf("%lld is positive\n", (signed long)n);
 	}
 	else if (n == 0)
 	{
-		printf("%ls is zero\n", (signed long)n);
+		printf("%lld is zero\n", (signed long)n);
 	}
 	else
 	{
-		printf("%ls is negative\n", (signed long)n);
+		printf("%lld is negative\n", (signed long)n);
 	}
 	return (0);
 }
