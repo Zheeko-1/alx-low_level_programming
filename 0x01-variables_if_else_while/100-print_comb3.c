@@ -5,7 +5,8 @@
  * Return: 0
  */
 int main(void)
-{	int c;
+{	
+	int c;
 	int d;
 
 	while (d < 10)
@@ -20,13 +21,13 @@ int main(void)
 
 				if (c + d != 17)
 				{
-					puchar(',');
+					putchar(',');
 					putchar(' ');
 				}
 			}
-			c++
+			c++;
 		}
-		d++
+		d++;
 	}
 	putchar('\n');
 	return (0);
