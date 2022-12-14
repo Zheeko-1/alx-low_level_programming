@@ -16,7 +16,7 @@ int main(void)
 		{
 			sum += c;
 		}
-		c++
+		c++;
 	}
 	printf("%d\n", sum);
 	return (0);
