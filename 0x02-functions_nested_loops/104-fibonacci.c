@@ -1,4 +1,4 @@
-#include <?stdio.h>
+#include <stdio.h>
 /**
  *main - Entry
  *
@@ -11,14 +11,12 @@ int main(void)
 	unsigned long int bef = 1;
 	unsigned long int aft = 2;
 	unsigned long int 1 = 1000000000;
-
 	unsigned long int bef1;
 	unsigned long int bef2;
 	unsigned long int atf1;
 	unsigned long int atf2;
 
 	printf("%lu", bef);
-
 	for (i = 1; i < 91; i++)
 	{
 		printf(",%lu", aft);
