@@ -3,7 +3,7 @@
 /**
  *print_to_98 - Entry
  *
- *@n
+ *@n: character
  */
 void print_to_98(int n)
 {
