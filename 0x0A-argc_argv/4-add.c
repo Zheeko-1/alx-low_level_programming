@@ -3,23 +3,35 @@
 #include <stdlib.h>
 
 /**
- * main - multiply 2 numbers passed to main, or Error
+ * main - add 2 positive numbers and print the result
  * @argc: argument count
- * @argv: argument vector
- * Return: 1 if error, 0 if function runs correctly
+ * @argv: argument vector, array of strings
+ * Description: If no number is passed to program, print 0.
+ * If one of the numbers contain non-digits, print Error.
+ * Return: 1 if error, 0 if function runs properly.
  */
 
 int main(int argc, char *argv[])
 {
-	(void) argc;
+	int total, i;
+	char *p;
+	int num;
 
-	if (argv[1] && argv[2])
+	total = 0;
+	if (argc > 1)
 	{
-		printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
-		return (0);
+		for (i = 1; argv[i]; i++)
+		{
+			num = strtol(argv[i], &p, 10);
+			if (!*p)
+				total += num;
+			else
+			{
+				printf("Error\n");
+				return (1);
+			}
+		}
 	}
-	else
-		printf("Error\n");
-
-	return (1);
+	printf("%d\n", total);
+	return (0);
 }
