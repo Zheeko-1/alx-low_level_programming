@@ -4,7 +4,7 @@
 /**
  *get_op_func - function pointer that selects the correct  function to perform
  *@s: user operator
- *Return pointer to coresponding function
+ *Return: pointer to coresponding function
  */
 int (*get_op_func(char *s))(int, int)
 {
